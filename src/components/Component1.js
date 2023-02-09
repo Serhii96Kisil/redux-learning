@@ -1,7 +1,13 @@
 import { connect } from "react-redux";
 
 function Component({ data }) {
-    return <div>data:{data}</div>;
+    return (
+        <div>
+            data:{data}
+            <br />
+            Random value: {Math.random()}
+        </div>
+    );
 }
 
 const mapStateToProps = (state) => ({
